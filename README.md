@@ -131,3 +131,10 @@ Test parameters can be modified in `conftest.py`:
 * `docker` → Docker container management
 * `pytest-html` → Generate HTML reports
 * `pytest-timeout` → Handle test timeouts
+
+---
+
+## 🖥️ Screenshot
+
+<img width="1470" height="956" alt="Screenshot 2025-08-26 at 7 31 17 PM" src="https://github.com/user-attachments/assets/db0afb91-68ab-46af-8d78-1436c4f00604" />
+
