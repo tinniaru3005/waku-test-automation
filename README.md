@@ -136,5 +136,13 @@ Test parameters can be modified in `conftest.py`:
 
 ## 🖥️ Screenshot
 
+### Terminal outputs
+
 <img width="1470" height="956" alt="Screenshot 2025-08-26 at 7 31 17 PM" src="https://github.com/user-attachments/assets/db0afb91-68ab-46af-8d78-1436c4f00604" />
+
+### Full HTML Report
+
+<img width="1470" height="878" alt="Screenshot 2025-08-26 at 8 14 03 PM" src="https://github.com/user-attachments/assets/ef0f6f78-e75b-44ae-9ba5-467f7fa86a31" />
+
+
 
