@@ -1,0 +1,21 @@
+2025-08-26 17:33:42,303 - root - INFO - Started container: waku_node1
+2025-08-26 17:34:12,344 - root - INFO - Node ENR URI: enr:-Kq4QNFLj35mZTUeqxeYRRbidUXGZdqxjvfcUjFwU3KLENvkC5q7RUblwp0rPOEO_O2xSZgyJYKCwP-WucPuBuMHqB8BgmlkgnY0gmlwhKwSb-KKbXVsdGlhZGRyc4wACgSsEm_iBlKr3QOJc2VjcDI1NmsxoQMr-j-XmPwdvxmJvqPgi_u5dL8QCoRvkj3abrfdmbgN0YN0Y3CCUqqDdWRwglKshXdha3UyAQ
+2025-08-26 17:34:12,385 - root - INFO - Subscribed to topics: ['/my-app/2/chatroom-1/proto']
+2025-08-26 17:34:12,392 - root - INFO - Published message to /my-app/2/chatroom-1/proto
+2025-08-26 17:34:15,445 - root - INFO - Created network: waku
+2025-08-26 17:34:15,868 - root - INFO - Removed existing container: waku_node1
+2025-08-26 17:34:15,987 - root - INFO - Started container: waku_node1
+2025-08-26 17:34:31,026 - root - INFO - Connected waku_node1 to waku with IP 172.18.111.226
+2025-08-26 17:34:51,055 - root - INFO - Node1 ENR: enr:-Kq4QPKdV4X5fq2iJesZ_MBTwJhrearfaN4F154PqBs0FCk5fqEMbswUo6MgAFOXCmFQ_x5NgD57YP2JIaXwJwOrYqgBgmlkgnY0gmlwhKwSb-KKbXVsdGlhZGRyc4wACgSsEm_iBlKr3QOJc2VjcDI1NmsxoQKjlFFwJv_6nN4eOmCOWfmuY0ivBsXOlbKZMashmslH9YN0Y3CCUqqDdWRwglKshXdha3UyAQ
+2025-08-26 17:34:51,094 - root - INFO - Subscribed to topics: ['/my-app/2/chatroom-1/proto']
+2025-08-26 17:34:51,280 - root - INFO - Started container: waku_node2
+2025-08-26 17:35:06,332 - root - INFO - Connected waku_node2 to waku with IP 172.18.111.227
+2025-08-26 17:35:26,372 - root - INFO - Attempt 1: Node1 peers: 1, Node2 peers: 1
+2025-08-26 17:35:26,373 - root - INFO - Successfully connected - Node1 peers: 1, Node2 peers: 1
+2025-08-26 17:35:26,388 - root - INFO - Subscribed to topics: ['/my-app/2/chatroom-1/proto']
+2025-08-26 17:35:41,418 - root - INFO - Published message to /my-app/2/chatroom-1/proto
+2025-08-26 17:35:56,433 - root - INFO - Node2 received 1 messages
+2025-08-26 17:35:56,435 - root - INFO - Received message: 'Inter-node communication test message'
+2025-08-26 17:35:57,530 - root - INFO - Stopped and removed container: waku_node1
+2025-08-26 17:35:58,773 - root - INFO - Stopped and removed container: waku_node2
+2025-08-26 17:35:58,964 - root - INFO - Removed network: waku
