@@ -57,7 +57,6 @@ waku-test-automation/
 ├── conftest.py
 ├── src/
 │   ├── __init.py
-│   ├── cleanup_docker.py
 │   ├── waku_client.py 
 │   └── docker_manager.py
 ├── tests/
