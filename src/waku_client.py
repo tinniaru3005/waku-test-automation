@@ -52,7 +52,6 @@ class WakuClient:
                        timestamp: Optional[int] = None) -> bool:
         """Publish a message to a topic"""
         try:
-            # Encode payload to base64
             encoded_payload = base64.b64encode(payload.encode()).decode()
             
             message_data = {

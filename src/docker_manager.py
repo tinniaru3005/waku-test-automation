@@ -45,7 +45,7 @@ class DockerManager:
             existing.remove()
             logging.info(f"Removed existing container: {node_name}")
         except docker.errors.NotFound:
-            pass  # Container doesn't exist, which is fine
+            pass
         except Exception as e:
             logging.warning(f"Error cleaning up existing container {node_name}: {e}")
         
@@ -55,7 +55,7 @@ class DockerManager:
             "--rest=true",
             "--rest-admin=true",
             "--websocket-support=true",
-            "--log-level=INFO",  # Changed from TRACE to reduce noise
+            "--log-level=INFO",
             "--rest-relay-cache-capacity=100",
             f"--websocket-port={ports['websocket']}",
             f"--rest-port={ports['rest']}",
@@ -72,7 +72,6 @@ class DockerManager:
         if bootstrap_node:
             command.append(f"--discv5-bootstrap-node={bootstrap_node}")
         
-        # Port mappings for Docker
         port_mappings = {
             f"{ports['rest']}/tcp": ports['rest'],
             f"{ports['tcp']}/tcp": ports['tcp'],
@@ -88,14 +87,14 @@ class DockerManager:
                 ports=port_mappings,
                 detach=True,
                 name=node_name,
-                remove=False  # Don't auto-remove so we can manage cleanup
+                remove=False
             )
             
             self.containers[node_name] = container
             logging.info(f"Started container: {node_name}")
             
             # Wait for container to be ready
-            time.sleep(15)  # Increased wait time
+            time.sleep(15)
             
             return container.id
             
